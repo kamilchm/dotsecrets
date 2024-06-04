@@ -1,4 +1,4 @@
-name: "Test"
+name: "CI checks"
 on:
   pull_request:
   push:
@@ -12,4 +12,5 @@ jobs:
     - uses: cachix/install-nix-action@v18
       with:
         nix_path: nixpkgs=channel:nixos-unstable
+    - run: ./lint.sh
     - run: ./tests.sh

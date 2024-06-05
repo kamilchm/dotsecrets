@@ -42,6 +42,27 @@ test_file() {
   assert_equals 'SECRET FILE' "$(cat secretfile)"
 }
 
+test_wrong_secret_key_for_var() {
+  export SECRET_KEY="secret1"
+
+  bash .secrets "x" "y" >> .secrets
+  assert_equals 0 $?
+
+  export SECRET_KEY="secret2"
+  assert_fail "bash .secrets"
+}
+
+test_wrong_secret_key_for_file() {
+  export SECRET_KEY="secret1"
+  echo -n "zzz" > sfile
+  bash .secrets sfile >> .secrets
+  assert_equals 0 $?
+  rm sfile
+
+  export SECRET_KEY="secret2"
+  assert_fail "bash .secrets"
+}
+
 test_secret_key_not_set() {
   unset SECRET_KEY
 

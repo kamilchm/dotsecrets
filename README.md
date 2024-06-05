@@ -29,6 +29,12 @@ and use across dev and CI environments with no additional setup.
 curl -f -o .secrets https://raw.githubusercontent.com/kamilchm/dotsecrets/main/dotsecrets
 ```
 
+And add it to your repo:
+
+```sh
+git add .secrets
+```
+
 ## Usage
 
 Set the `SECRET_KEY` environment variable and start using it.

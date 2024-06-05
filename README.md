@@ -21,6 +21,7 @@ and use across dev and CI environments with no additional setup.
 
 [SOPS]: https://github.com/getsops/sops
 
+![](yodawg.jpg)
 
 ## Install
 

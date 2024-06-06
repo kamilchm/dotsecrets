@@ -59,7 +59,7 @@ export `bash .secrets`
 
 ### Remove secret from store
 
-Open `.secrets' with your favourite editor. Find the line with the variable or file name and delete it.
+Open `.secrets` with your favourite editor. Find the line with the variable or file name and delete it.
 
 ### Update secret value
 

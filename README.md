@@ -57,6 +57,14 @@ bash .secrets FILENAME >> .secrets
 export `bash .secrets`
 ```
 
+### Remove secret from store
+
+Open `.secrets' with your favourite editor. Find the line with the variable or file name and delete it.
+
+### Update secret value
+
+[Remove](#remove-secret-from-store) the old value, and [add](#encrypt-an-env-var-value) the new one.
+
 ### GitHub Actions
 
 Add your `SECRET_KEY` to [GitHub Actions Secrets].

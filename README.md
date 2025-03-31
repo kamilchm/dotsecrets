@@ -4,7 +4,7 @@ Simple and easy secrets, perfect for small teams.
 
 * A small, readable, self-contained file for managing and storing secrets.
 * Easy to use in both development and CI environments.
-* Less than [50 lines of code, and only two dependencies - `bash` and `openssl`.
+* Less than 50 lines of code, and only two dependencies - `bash` and `openssl`.
 * Supports encryption of env vars and config files.
 
 ## Rationale
